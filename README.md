@@ -47,3 +47,10 @@
 ## Dúvidas?
 - Leia novamente este documento
 
+# Aulas
+
+## Aula03 19/08/2024
+- Trabalhando com Componentes
+- Passagem de parâmetros Pai -> Filho
+- Passagem de parâmetros Filho Pai
+- Exercício: Montagem de tela calculadora
