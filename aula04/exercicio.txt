@@ -1,0 +1,22 @@
+Projeto calculadora.
+Utilizando o React, monte o visual de uma 
+calculadora, ela deve possuir os números de
+0 à 9, bem como os botões + * - / e =
+
+Lembre-se: App deve ser o programa principal,
+que importa um componente chamado Botoes
+
+	o Componente Botoes deve receber como 
+	parâmetro o valor que será impresso no 
+	botão.
+	Exemplo, botão 9 deve receber como 
+	parâmetro o número 9
+	
+Calculadora
+	App => Principal
+		Tela 
+		Botoes 0 a 9
+		       + - * /
+	
+	Botoes => Componente
+		Recebe => Valor
