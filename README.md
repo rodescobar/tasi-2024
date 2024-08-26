@@ -49,6 +49,11 @@
 
 # Aulas
 
+## Aula02 12/08/2024
+- Conhecendo o React (apenas mostrando funcionalidades)
+- O que é componente
+- Busca à dados externos
+
 ## Aula03 19/08/2024
 - Trabalhando com Componentes
 - Passagem de parâmetros Pai -> Filho
