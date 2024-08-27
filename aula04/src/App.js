@@ -1,60 +1,84 @@
-import { useState } from 'react'
-import Botao from './components/Botao'
+import { useState  } from "react"
+import Botao from "./components/Botao"
+
+const estilos = {
+    Laranja: {
+        "background": "orange",
+        "width": "50px",
+        "height": "50px",
+        "borderRadius": "50px",
+        "margin": "1px",
+        "border": "none"
+    },
+    Branco: {
+        "background": "white",
+        "width": "50px",
+        "height": "50px",
+        "borderRadius": "50px",
+        "margin": "1px",
+        "border": "none"
+    }
+}
+
+
 
 const App = () => {
-	var [ funcao, setFuncao ] = useState("0")
-	var [ result, setResult ] = useState("0")
+    var [ expressao, setExpressao ] = useState("")
+    var [ resultado, setResultado ] = useState("")
 
-	const recebeValor = (valor) => {
+    const Receba = ( valRecebido ) => {
 
-		if (isNaN(valor) && valor == "=")
-			setResult(eval(funcao))	
-		else if (isNaN(valor) && valor == "C") {
-			setResult( "0" )	
-			setFuncao( "0" )
-		}
-		else {
-			setFuncao( funcao + valor )
-		}
-	}
+        if (valRecebido == "=") {
+            let total = eval( expressao )
+            setResultado( total )
+        }
+        else if (valRecebido == "C") {
+            setResultado("")
+            setExpressao("")
+        }
+        else 
+            setExpressao( expressao + valRecebido )
+    }
 
-	return(
-		<div>
-			<div style={{ 
-					"width": "210px", 
-					"border": "1px solid black", 
-					"textAlign": "right",
-					"color": "#fff",
-					"background": "#000"
-				}}>
-				<p>{ funcao }</p>
-				<h3>{ result }</h3>
-			</div>
-			<div style={{ 
-					"width": "210px", 
-					"border": "1px solid black", 
-					"textAlign": "right",
-					"background": "#000"
-					}}>
-				<Botao valor="7" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="8" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="9" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="+" retorno={ recebeValor } cor="orange" />
-				<Botao valor="4" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="5" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="6" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="-" retorno={ recebeValor } cor="orange" />
-				<Botao valor="1" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="2" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="3" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="*" retorno={ recebeValor } cor="orange" />
-				<Botao valor="0" retorno={ recebeValor } cor="#fff" />
-				<Botao valor="C" retorno={ recebeValor } cor="orange" />
-				<Botao valor="/" retorno={ recebeValor } cor="orange" />
-				<Botao valor="=" retorno={ recebeValor } cor="orange" />
-			</div>
-		</div>
-	)
+    return(
+        <div>
+            <div style={ 
+                {
+                    "background": "#000",
+                    "color": "#fff",
+                    "width": "210px",
+                    "textAlign": "right"
+                } 
+            }>
+                <p>{ expressao }</p>
+                <h3>{ resultado }</h3>
+            </div>
+            <div style={ 
+                {
+                    "background": "#000",
+                    "color": "#fff",
+                    "width": "210px"
+                } 
+            }>
+                <Botao valor="7" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="8" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="9" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="+" retorno={ Receba } estilo={ estilos.Laranja } />
+                <Botao valor="4" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="5" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="6" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="-" retorno={ Receba } estilo={ estilos.Laranja } />
+                <Botao valor="1" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="2" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="3" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="*" retorno={ Receba } estilo={ estilos.Laranja } />
+                <Botao valor="0" retorno={ Receba } estilo={ estilos.Branco } />
+                <Botao valor="C" retorno={ Receba } estilo={ estilos.Laranja } />
+                <Botao valor="/" retorno={ Receba } estilo={ estilos.Laranja } />
+                <Botao valor="=" retorno={ Receba } estilo={ estilos.Laranja } />
+            </div>
+        </div>
+    )
 }
 
 export default App
