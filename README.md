@@ -64,3 +64,9 @@
 - Exercício de Calculadora
 - Correção do exercício
 - Passagem de parametros
+
+## Aula05 02/09/2024
+- Consumo de API
+- Instalanco biblioteca 
+  ``` npm install axios ```
+- Exercício 
