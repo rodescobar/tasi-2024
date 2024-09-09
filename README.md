@@ -69,6 +69,16 @@
 - Consumo de API
 - Instalanco biblioteca 
 
-
   ``` npm install axios ```
 - Exercício 
+
+## Aula06 09/09/2024 - Exercício
+Com o conteúdo utilizado na aula 05 (axios), aplique a propriedade CARD do Material UI deixando a imagem de cada personagem da API Ricky and Morty conforme imagem abaixo
+![CARD](aula06/imagem.png)
+
+
+Instalação do Material UI
+https://mui.com/material-ui/getting-started/installation/#default-installation
+
+Propriedade CARD
+https://mui.com/material-ui/react-card/
