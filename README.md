@@ -85,6 +85,10 @@ Propriedade CARD
 
 https://mui.com/material-ui/react-card/
 
+## Aula 08 - 23/09/2024
+- Trabalhando com Rotas
+- localStorage
+- Validação simples de login
 
 ## Aula 09 - 30/09/2024
 - Trabalhando com rotas privadas
