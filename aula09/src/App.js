@@ -54,6 +54,7 @@ const App = () => {
         if (dados.usuario === "teste" && dados.senha === "123") {
             localStorage.setItem("MEU_SITE", true)
             setAuthentication(true)
+            window.location = "/dashboard"
         } else {
             console.log("USUARIO E OU SENHA INVALIDOS")
         }
