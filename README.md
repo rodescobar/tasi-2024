@@ -84,3 +84,7 @@ https://mui.com/material-ui/getting-started/installation/#default-installation
 Propriedade CARD
 
 https://mui.com/material-ui/react-card/
+
+
+## Aula 09 - 30/09/2024
+- Trabalhando com rotas privadas
