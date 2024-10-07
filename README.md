@@ -92,3 +92,30 @@ https://mui.com/material-ui/react-card/
 
 ## Aula 09 - 30/09/2024
 - Trabalhando com rotas privadas
+
+## Aula 10 - 07/10/2024
+- Trabalho
+  - Crie uma aplicação que possua tela de Login, onde o usuário só possa acessar caso ele digite seu usuário e senha
+    - O usuário e senha deverá ser o seu RA
+
+  - Após o Login o usuário deverá ser direcionado ao componente chamado Marvel.
+  - Está tela deverá possuir uma caixa de texto e um botão buscar.
+    - Se o usuário digitar Wolverine e posteriormente clicar em buscar, sua aplicação deverá buscar informações e imagens existentes na API Marvel
+    - Da mesma forma, se o usuário digitar Spider-Man as mesmas informaões deverão ser recebidas da API Marvel
+    - Exemplo de funcionamento neste [Link](https://snack.expo.dev/@pedrohlopesnvp/exercicio_marvel)
+  
+  - **Componente Marvel**
+    - Utilizando a [API da Marvel](https://developer.marvel.com/)
+    - Crie um usuário e senha para você na API, desta forma você receberá uma Public Key e uma Private Key (itens obrigatórios para continuidade do trabalho) [Link](https://developer.marvel.com/signup)
+      - Ou no meu principal **Get Key**
+    - Para enviar o nome do personagem e receber suas informações, vocÊ deverá utilizar a URI **get /v1/public/characters** com o parâmetro **?nameStartsWith**, conforme documentação (Swagger)[https://developer.marvel.com/docs]
+      - Acesso também pelo menu principal **Interative Documentation**
+    - Porém, para acesso a API bem como o resgate das informações, você deverá enviar além do parâmetro **nameStartsWith** os dados:
+      - **ts**: que representa o timeStamp atual
+      - **hash**: que deverá ser um MD5 do seu **ts** + **privateKey** + **publicKey**
+      - Gerando então uma URL parecida com esta
+
+       ``http://gateway.marvel.com/v1/public/comics?nameStartsWith=Spider-Man&ts=1&apikey=1234&hash=ffd275c5130566a2916217b101f26150`` 
+
+      - (Documentação)[https://developer.marvel.com/documentation/authorization]
+  
