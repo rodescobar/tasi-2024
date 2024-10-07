@@ -131,3 +131,7 @@ https://mui.com/material-ui/react-card/
    
       - (Documentação)[https://developer.marvel.com/documentation/authorization]
   
+  ### Atenção 
+  - É necessária a entrega hoje....
+  - E-mail: rodrigo.escobar@gmail.com
+  - Valendo ponto na média
