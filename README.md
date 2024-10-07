@@ -122,8 +122,12 @@ https://mui.com/material-ui/react-card/
     const ts = Date.now();
     const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
 
-    const url = "https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}""; ```
+    const url = "https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}""; 
+    ```
 
-
+     ```http
+      http://gateway.marvel.com/v1/public/comics?nameStartsWith=Spider-Man&ts=1&apikey=1234&hash=ffd275c5130566a2916217b101f26150
+    ```   
+   
       - (Documentação)[https://developer.marvel.com/documentation/authorization]
   
