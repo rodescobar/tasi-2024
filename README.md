@@ -114,20 +114,20 @@ https://mui.com/material-ui/react-card/
       - **ts**: que representa o timeStamp atual
       - **hash**: que deverá ser um MD5 do seu **ts** + **privateKey** + **publicKey**
       - **apikey**: sua chave pública
-      - Gerando então uma URL parecida com esta
 
     ```js
     const publicKey = '3d212268eb399a3404abee957ca6ae3e';
     const privateKey = 'd6e5c97bd409375c708f93c4e3399ce1b17fc8de';
     const ts = Date.now();
-    const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
+    const hash = MD5(ts + privateKey + publicKey) //Está função não esta correta, pesquise como fazer;
 
     const url = "https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}""; 
     ```
 
-     ```http
-      http://gateway.marvel.com/v1/public/comics?nameStartsWith=Spider-Man&ts=1&apikey=1234&hash=ffd275c5130566a2916217b101f26150
-    ```   
+      - Gerando então uma URL parecida com esta
+      ```http
+        http://gateway.marvel.com/v1/public/comics?nameStartsWith=Spider-Man&ts=1&apikey=1234&hash=ffd275c5130566a2916217b101f26150
+      ```   
    
       - (Documentação)[https://developer.marvel.com/documentation/authorization]
   
