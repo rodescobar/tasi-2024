@@ -116,13 +116,13 @@ https://mui.com/material-ui/react-card/
       - **apikey**: sua chave pública
       - Gerando então uma URL parecida com esta
 
-    ``  
+    ```js
     const publicKey = '3d212268eb399a3404abee957ca6ae3e';
     const privateKey = 'd6e5c97bd409375c708f93c4e3399ce1b17fc8de';
     const ts = Date.now();
     const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
 
-    const url = "https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}""; ``
+    const url = "https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}""; ```
 
 
       - (Documentação)[https://developer.marvel.com/documentation/authorization]
