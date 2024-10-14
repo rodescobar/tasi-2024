@@ -141,7 +141,7 @@ https://mui.com/material-ui/react-card/
 - Entrege deverá ser feita via repositório git (enviar o link por e-mail)
 - A avaliação semestral serão perguntas sobre o trabalho
 
-- **Descrisção**
+- **Descrição**
   - Utilizando a documentação para acesso ao BackEnd disponivel [aqui](https://github.com/rodescobar/backendAula), faça
     - Crie uma aplicação em React que possa trabalhar diretamente com o BackEnd informado.
     - Sua aplicação deverá ter as seguintes telas:
