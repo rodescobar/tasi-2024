@@ -135,3 +135,20 @@ https://mui.com/material-ui/react-card/
   - É necessária a entrega hoje....
   - E-mail: rodrigo.escobar@gmail.com
   - Valendo ponto na média
+
+## Aula 11 - 14/10/2024
+- Trabalho avaliativo para entrega no dia da avaliação Novembro/2024
+- Entrege deverá ser feita via repositório git (enviar o link por e-mail)
+- A avaliação semestral serão perguntas sobre o trabalho
+
+- **Descriação**
+  - Utilizando a documentação para acesso ao BackEnd disponivel (aqui)[https://github.com/rodescobar/backendAula], faça
+    - Crie uma aplicação em React que possa trabalhar diretamente com o BackEnd informado.
+    - Sua aplicação deverá ter as seguintes telas:
+      - Registrar usuário
+      - Login
+      - Listar produtos (Área segura)
+      - Incluir produtos (Área segura)
+      - Alterar produtos (Área segura)
+      - Excluir produtos (Área segura)
+  - Toda a documentação para acesso ao banco, envio e recebimento dos dados estão disponíveis no link acima
